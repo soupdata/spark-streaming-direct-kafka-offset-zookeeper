@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b6cf2d0-df11-4eeb-9e0a-b16c953b0037" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_101tec_zkclient_0_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_101tec_zkclient_0_3_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_yammer_metrics_metrics_core_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_yammer_metrics_metrics_core_2_2_0_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_kafka_kafka_2_10_0_8_2_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_kafka_kafka_2_10_0_8_2_1_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_streaming_kafka_2_10_1_6_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_streaming_kafka_2_10_1_6_3_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/sparkproject.iml" afterPath="$PROJECT_DIR$/.idea/modules/sparkproject.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3a14718c13a6bc2304aa$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$3a14718c13a6bc2304aa$.class" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3a14718c13a6bc2304aa.cache" afterPath="$PROJECT_DIR$/project/target/config-classes/$3a14718c13a6bc2304aa.cache" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3a14718c13a6bc2304aa.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$3a14718c13a6bc2304aa.class" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8ad2c1f0b43ca1461d81$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$8ad2c1f0b43ca1461d81$.class" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8ad2c1f0b43ca1461d81.cache" afterPath="$PROJECT_DIR$/project/target/config-classes/$8ad2c1f0b43ca1461d81.cache" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8ad2c1f0b43ca1461d81.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$8ad2c1f0b43ca1461d81.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/core.scala" afterPath="$PROJECT_DIR$/src/main/scala/core.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/producerJava.java" afterPath="$PROJECT_DIR$/src/main/scala/producerJava.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/spark/com/test/KafkaManager.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/spark/com/test/kafkaManagerTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject$sources/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject$sources/0.1/resolved.xml.properties" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject$sources/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject$sources/0.1/resolved.xml.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject_2.10/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject_2.10/0.1/resolved.xml.properties" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject_2.10/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/default/sparkproject_2.10/0.1/resolved.xml.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-compile-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-compile-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-compile.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-compile.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-optional.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-optional.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-plugin.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-plugin.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-pom.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-provided.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-provided.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-runtime-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-runtime.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-runtime.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-scala-tool.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-scala-tool.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-test-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-test-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-test.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject$sources-test.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-compile-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-compile.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-compile.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-optional.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-optional.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-plugin.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-plugin.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-pom.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-provided.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-provided.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-runtime-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-runtime.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-runtime.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-scala-tool.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-scala-tool.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-test-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-test.xml" afterPath="$PROJECT_DIR$/target/scala-2.10/resolution-cache/reports/default-sparkproject_2.10-test.xml" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/spark/KafkaCluster.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-858">
-              <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding>
                 <element signature="e#15#49#0" expanded="true" />
               </folding>
@@ -108,8 +63,8 @@
       <file leaf-file-name="kafkaManagerTest.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/spark/kafkaManagerTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+            <state relative-caret-position="272">
+              <caret line="35" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
               <folding>
                 <element signature="e#15#49#0" expanded="true" />
               </folding>
@@ -121,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/producerJava.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -560,12 +515,12 @@
       <workItem from="1546396633539" duration="29117000" />
       <workItem from="1546517947528" duration="39364000" />
       <workItem from="1546910395299" duration="1955000" />
-      <workItem from="1546925831439" duration="12216000" />
+      <workItem from="1546925831439" duration="12692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116870000" />
+    <option name="totallyTimeSpent" value="117346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="297" y="19" width="1857" height="1092" extended-state="6" />
@@ -934,6 +889,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2458">
           <caret line="114" column="3" lean-forward="false" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#34#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,7 +990,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/spark/KafkaCluster.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-858">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="e#15#49#0" expanded="true" />
           </folding>
@@ -1109,15 +1067,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/producerJava.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/spark/kafkaManagerTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
           <folding>
             <element signature="e#15#49#0" expanded="true" />
           </folding>
