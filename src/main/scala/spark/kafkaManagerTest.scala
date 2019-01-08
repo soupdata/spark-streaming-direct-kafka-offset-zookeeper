@@ -11,7 +11,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object kafkaManagerTest {
   def main(args: Array[String]) {
-
+    // 怀疑可能是线程问题，于是设置成单线程,报错 Error running job streaming job 1546952615000 ms.0，于是设置成2个
+    // 排除是线程的原因
     val sparkConf: SparkConf = new SparkConf().setAppName("SparkStreamingKafka_Direct").setMaster("local[4]")
     //2、创建sparkContext
     val sc = new SparkContext(sparkConf)
@@ -31,39 +32,18 @@ object kafkaManagerTest {
 
     //var offsetRanges = Array.empty[OffsetRange]
 
-
-//    val transformRdd=dstreams
-//      .transform {
-//        rdd =>
-//          //rdd.foreach(x=>println("transform rdd:"+x))
-//          //offsetRanges = rdd.asInstanceOf[HasOffsetRanges].offsetRanges
-//          manager.updateZKOffsets(rdd)
-//
-//          rdd
-//      }
-//    val mapRdd=transformRdd.map(x=>{
-//      println("maprdd 1:"+x._1)
-//      println("maprdd 2:"+x._2)
-//      x._2
-//    })
-//    mapRdd.foreachRDD((rdd: RDD[String]) => {
-//      //rdd.foreach(result=>println("foreachRdd result:"+result))
-//        rdd.foreachPartition(iter=>
-//          iter.foreach(record=> {
-//            println("recode:"+record)
-//            saveData(iter)
-//          })
-//        )
-//    })
     println("start......")
 
     dstreams.foreachRDD((rdd:RDD[(String,String)]) =>{
       rdd.foreachPartition(iter=>{
-      iter.foreach(x=>saveData(iter))
-      manager.updateZKOffsets(rdd)
-        println("executor update offset")
+      iter.foreach(x=>{
+        saveData(iter)
+        manager.updateZKOffsets(rdd)
+      })
+        println("streaming===================")
     })
     })
+
 
 
 
@@ -74,19 +54,23 @@ object kafkaManagerTest {
   }
 
 
-
-  def saveData(iterator: Iterator[(String,String)]): String ={
+//Iterator[(String,String)])
+  def saveData(iterators: Iterator[(String,String)]): String ={
+    // 判断指针是否指到最后去了
+    var it:Iterator[(String,String)]=null
+    it=iterators
+    //(elem <- it) println(elem)
     var num=0
     var res: String = null
     val writer = new PrintWriter(new File("/usr/local/kafkaData.txt"))
     try {
-      println("iterator length:"+iterator.length)
-      iterator.foreach(x=>println("x->"+x))
-      println("iterator.hasNext:"+iterator.hasNext)
+//      println("it length:"+it.length)
+//      println("it hasNext:"+it.hasNext)
+//      print(it.take(7))
       // iterator type modifly
-      while (iterator.hasNext) {
+      while (it.hasNext) {
         num=num+1
-        val sql = iterator.next()
+        val sql = it.next()
         // val word = sql.split("")
         writer.println("data-> num-> sql"+ num+ ":"+sql)
         println("data-> num-> sql"+ num+ ":"+sql)
