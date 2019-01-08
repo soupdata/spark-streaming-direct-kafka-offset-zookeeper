@@ -20,8 +20,9 @@ object kafkaManagerTest {
     //3、创建StreamingContext
     val ssc = new StreamingContext(sc, Seconds(5))
     //保证元数据恢复，就是Driver端挂了之后数据仍然可以恢复
-
-    val kafkaParams = Map("metadata.broker.list" -> "localhost:9092", "group.id" -> "Kafka_Direct","enable.auto.commit"->"false","auto.offset.reset" -> "largest","fetch.message.max.bytes" -> "20971520") //smallest largest latest
+    //速率一秒50条
+    //将配置配置到spark conf中（明早一来尝试这个-------------------嘻嘻^-^）
+    val kafkaParams = Map("metadata.broker.list" -> "localhost:9092", "group.id" -> "Kafka_Direct","spark.streaming.kafka.maxRatePerPartition"->"50","enable.auto.commit"->"false","auto.offset.reset" -> "largest","fetch.message.max.bytes" -> "20971520") //smallest largest latest
     //5、定义topic
     val topics = Set("sql-2")
     val manager = new KafkaManager(kafkaParams)
