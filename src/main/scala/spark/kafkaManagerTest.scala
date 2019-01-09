@@ -13,16 +13,21 @@ object kafkaManagerTest {
   def main(args: Array[String]) {
     // 怀疑可能是线程问题，于是设置成单线程,报错 Error running job streaming job 1546952615000 ms.0，于是设置成2个
     // 排除是线程的原因
+    // 应该配置在sparkconf中
     val sparkConf: SparkConf = new SparkConf().setAppName("SparkStreamingKafka_Direct").setMaster("local[4]")
+      .set("spark.streaming.kafka.maxRatePerPartition","50")
     //2、创建sparkContext
     val sc = new SparkContext(sparkConf)
     sc.setLogLevel("WARN")
     //3、创建StreamingContext
     val ssc = new StreamingContext(sc, Seconds(5))
     //保证元数据恢复，就是Driver端挂了之后数据仍然可以恢复
+    //checkpoint
     //速率一秒50条
     //将配置配置到spark conf中（明早一来尝试这个-------------------嘻嘻^-^）
-    val kafkaParams = Map("metadata.broker.list" -> "localhost:9092", "group.id" -> "Kafka_Direct","spark.streaming.kafka.maxRatePerPartition"->"50","enable.auto.commit"->"false","auto.offset.reset" -> "largest","fetch.message.max.bytes" -> "20971520") //smallest largest latest
+    //all ready set 1s从kafka里读取50条数据
+    // ,"spark.streaming.kafka.maxRatePerPartition"->"50","enable.auto.commit"->"false","auto.offset.reset" -> "largest"
+    val kafkaParams = Map("metadata.broker.list" -> "localhost:9092", "group.id" -> "Kafka_Direct","fetch.message.max.bytes" -> "20971520") //smallest largest latest
     //5、定义topic
     val topics = Set("sql-2")
     val manager = new KafkaManager(kafkaParams)

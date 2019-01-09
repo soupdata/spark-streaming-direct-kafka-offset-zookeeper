@@ -17,9 +17,9 @@ public class producerJava {
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
         Producer<String, String> producer = new KafkaProducer<>(props);
-        for (int i = 1; i < 10000; i++)
+        for (int i = 1; i < 1000; i++)
 
-            producer.send(new ProducerRecord<String, String>("sql-2", Integer.toString(i),"Nothing is invented and profected at the same time "+i));
+            producer.send(new ProducerRecord<String, String>("sql-2", Integer.toString(i),"The real opportunity for success lies within the person not in the job"+i));
 
         producer.close();
     }
